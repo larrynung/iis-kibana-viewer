@@ -2,8 +2,6 @@ version: "2.0"
 services:
   elasticsearch:
     image: elasticsearch
-    ports:
-      - 9200:9200
   kibana:
     image: kibana
     ports:
