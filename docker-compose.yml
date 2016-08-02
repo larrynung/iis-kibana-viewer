@@ -12,5 +12,5 @@ services:
     image: logstash
     volumes:
       - ./logs:/logs
-      - ./logstash.conf:/logstash.conf
-    command: logstash -f /logstash.conf
+      - ./logstash:/config
+    command: logstash -f /config/logstash.conf
